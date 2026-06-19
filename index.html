@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rehan Firoz | AI Researcher | Game AI Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Rehan Firoz showcasing AI research, machine learning projects, IEEE publications, and Game AI interests."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <header>
+      <nav class="navbar">
+        <a href="#hero" class="brand">Rehan Firoz</a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero reveal">
+        <img class="profile" src="assets/profile.jpg" alt="Rehan Firoz profile" />
+        <h1>Rehan Firoz</h1>
+        <h2>M.Tech Artificial Intelligence &amp; Machine Learning</h2>
+        <p>AI Researcher | Machine Learning Engineer | Game AI Enthusiast</p>
+        <div class="actions">
+          <a href="assets/resume.pdf" class="btn primary" download>Download Resume</a>
+          <a href="https://github.com" class="btn" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <h3>About Me</h3>
+        <p>
+          I am an M.Tech student specializing in Artificial Intelligence and Machine Learning with a strong interest in
+          Game AI, Procedural Content Generation, Intelligent NPC Systems, and Machine Learning applications in gaming.
+        </p>
+        <p>
+          My research focuses on creating intelligent, adaptive systems that improve player experiences through
+          AI-driven decision making and procedural content generation.
+        </p>
+        <p>
+          I have experience developing machine learning, computer vision, and NLP systems and have published research
+          related to AI in gaming.
+        </p>
+      </section>
+
+      <section id="research" class="section reveal">
+        <h3>IEEE Research Publication</h3>
+        <article class="card featured">
+          <h4>A Comprehensive Review of AI-Driven NPC Intelligence and Procedural Content Generation in Video Games</h4>
+          <div class="badges">
+            <span>Publication</span>
+            <span>Research</span>
+            <span>Game AI</span>
+          </div>
+          <ul>
+            <li>NPC Intelligence</li>
+            <li>Procedural Content Generation</li>
+            <li>Reinforcement Learning</li>
+            <li>Adaptive Gameplay</li>
+            <li>AI for Games</li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="assets/ieee-paper.pdf" target="_blank" rel="noopener">View Paper</a>
+            <a class="btn" href="assets/ieee-paper.pdf" download>Download Certificate</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <h3>Projects</h3>
+        <div class="grid projects">
+          <article class="card project-card">
+            <h4>Occlusion-Robust Gait Recognition System</h4>
+            <p>
+              Developed a deep learning-based gait recognition system using CNNs and attention mechanisms for robust
+              human identification under occlusion conditions.
+            </p>
+            <div class="badges"><span>PyTorch</span><span>Computer Vision</span><span>Streamlit</span></div>
+            <div class="actions"><a class="btn" href="https://github.com" target="_blank" rel="noopener">GitHub</a><a class="btn" href="#" aria-label="Gait system demo">Demo</a></div>
+          </article>
+          <article class="card project-card">
+            <h4>Fake News Detection using BERT + BiLSTM</h4>
+            <p>
+              Built a hybrid NLP system using transformers and recurrent networks for real-time fake news
+              classification.
+            </p>
+            <div class="badges"><span>BERT</span><span>BiLSTM</span><span>Transformers</span></div>
+            <div class="actions"><a class="btn" href="https://github.com" target="_blank" rel="noopener">GitHub</a><a class="btn" href="#" aria-label="Fake news demo">Demo</a></div>
+          </article>
+          <article class="card project-card">
+            <h4>RAG Optimization Research</h4>
+            <p>
+              Research project focused on reducing hallucinations in Retrieval-Augmented Generation systems using
+              improved retrieval and context strategies.
+            </p>
+            <div class="badges"><span>LLMs</span><span>LangChain</span><span>Vector Databases</span></div>
+            <div class="actions"><a class="btn" href="https://github.com" target="_blank" rel="noopener">GitHub</a><a class="btn" href="#" aria-label="RAG details">Details</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <h3>Skills</h3>
+        <div class="grid skills-grid">
+          <div class="card"><h4>Programming</h4><div class="badges"><span>Python</span><span>Java</span><span>SQL</span></div></div>
+          <div class="card"><h4>AI/ML</h4><div class="badges"><span>Machine Learning</span><span>Deep Learning</span><span>PyTorch</span><span>TensorFlow</span><span>Scikit-Learn</span></div></div>
+          <div class="card"><h4>Computer Vision</h4><div class="badges"><span>OpenCV</span><span>CNNs</span><span>Image Processing</span></div></div>
+          <div class="card"><h4>NLP</h4><div class="badges"><span>Transformers</span><span>BERT</span><span>RAG</span><span>LangChain</span></div></div>
+          <div class="card"><h4>Tools</h4><div class="badges"><span>Git</span><span>GitHub</span><span>Linux</span><span>FastAPI</span></div></div>
+        </div>
+      </section>
+
+      <section id="resume" class="section reveal">
+        <h3>Resume</h3>
+        <a class="btn primary" href="assets/resume.pdf" download>Download Resume</a>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <h3>Contact</h3>
+        <div class="contact-links">
+          <a href="mailto:rehan@example.com" aria-label="Email">✉ Email</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">🔗 LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">💻 GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section footer">
+      <p>© 2026 Rehan Firoz</p>
+      <p>Artificial Intelligence | Machine Learning | Game AI</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
