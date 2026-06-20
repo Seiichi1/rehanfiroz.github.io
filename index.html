@@ -6,25 +6,57 @@
     <title>Rehan Firoz | AI Researcher | Game AI Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of Rehan Firoz showcasing AI research, machine learning projects, IEEE publications, and Game AI interests."
+      content="Portfolio of Rehan Firoz showcasing AI research, machine learning projects, IEEE publications, and Game AI interests. Exploring Game AI, NPC Intelligence, and Procedural Content Generation."
     />
+    <meta name="keywords" content="AI, Machine Learning, Game AI, NPC Intelligence, Procedural Content Generation, Reinforcement Learning, LLMs" />
+    <meta name="author" content="Rehan Firoz" />
+    <meta name="theme-color" content="#070b18" />
+    <meta property="og:title" content="Rehan Firoz | AI Researcher" />
+    <meta property="og:description" content="M.Tech AI & ML student exploring Game AI and intelligent systems" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rehanfiroz.dev" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Rehan Firoz | AI Researcher" />
+    <meta property="twitter:description" content="M.Tech AI & ML student exploring Game AI and intelligent systems" />
+    <link rel="canonical" href="https://rehanfiroz.dev" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rehan Firoz",
+      "url": "https://rehanfiroz.dev",
+      "image": "https://rehanfiroz.dev/assets/profile.jpg",
+      "jobTitle": "AI Researcher | Machine Learning Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Self Employed"
+      },
+      "sameAs": [
+        "https://github.com/Seiichi1",
+        "https://www.linkedin.com/in/rehan-firoz-123df/"
+      ],
+      "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Game AI", "NPC Intelligence", "Procedural Content Generation", "Reinforcement Learning", "Large Language Models"]
+    }
+    </script>
   </head>
   <body>
+    <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
     <canvas id="particles" aria-hidden="true"></canvas>
     <header>
       <nav class="navbar">
         <a href="#hero" class="brand">Rehan Firoz</a>
-        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#research">Research</a></li>
+          <li><a href="#interests">Research</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#resume">Resume</a></li>
+          <li><a href="#timeline">Timeline</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -32,14 +64,14 @@
 
     <main>
       <section id="hero" class="section hero reveal">
-        <img class="profile" src="assets/profile.jpg" alt="Rehan Firoz profile" />
+        <img class="profile" src="assets/profile.png" alt="Rehan Firoz profile" loading="lazy" />
         <h1>Rehan Firoz</h1>
         <h2>M.Tech Artificial Intelligence &amp; Machine Learning</h2>
-        <p>AI Researcher | Machine Learning Engineer | Game AI Enthusiast</p>
+        <p class="typing-text" id="typing-text"></p>
         <div class="actions">
           <a href="assets/resume.pdf" class="btn primary" download>Download Resume</a>
-          <a href="https://github.com/rehanfiroz" class="btn" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/rehanfiroz/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Seiichi1" class="btn" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/rehan-firoz-123df/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </section>
 
@@ -59,16 +91,55 @@
         </p>
       </section>
 
-      <section id="research" class="section reveal">
-        <h3>IEEE Research Publication</h3>
-        <article class="card featured">
+      <section id="interests" class="section reveal">
+        <h3>Research Interests</h3>
+        <div class="interests-grid">
+          <div class="interest-card glass-card">
+            <div class="interest-icon">🎮</div>
+            <h4>Game AI</h4>
+            <p>Developing intelligent systems for dynamic game environments and player adaptation.</p>
+          </div>
+          <div class="interest-card glass-card">
+            <div class="interest-icon">🤖</div>
+            <h4>NPC Intelligence</h4>
+            <p>Creating believable non-player character behaviors using reinforcement learning and decision trees.</p>
+          </div>
+          <div class="interest-card glass-card">
+            <div class="interest-icon">🌍</div>
+            <h4>Procedural Content Generation</h4>
+            <p>Generating diverse game levels, environments, and assets using algorithmic techniques.</p>
+          </div>
+          <div class="interest-card glass-card">
+            <div class="interest-icon">🧠</div>
+            <h4>Reinforcement Learning</h4>
+            <p>Training autonomous agents to make optimal decisions through trial and learning.</p>
+          </div>
+          <div class="interest-card glass-card">
+            <div class="interest-icon">✨</div>
+            <h4>Generative AI</h4>
+            <p>Exploring generative models for content creation and creative applications.</p>
+          </div>
+          <div class="interest-card glass-card">
+            <div class="interest-icon">💬</div>
+            <h4>Large Language Models</h4>
+            <p>Researching LLMs for dialogue systems, NPC conversations, and natural language generation.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="publication" class="section reveal">
+        <h3>Featured Research</h3>
+        <article class="card glass-card publication-spotlight">
+          <div class="spotlight-badge">Featured Publication</div>
           <h4>A Comprehensive Review of AI-Driven NPC Intelligence and Procedural Content Generation in Video Games</h4>
+          <p class="publication-meta">IEEE Research Publication | 2024</p>
           <div class="badges">
             <span>Publication</span>
             <span>Research</span>
             <span>Game AI</span>
           </div>
-          <ul>
+          <p>This comprehensive review explores state-of-the-art techniques in AI-driven NPC intelligence, procedural content generation, and reinforcement learning applications in modern video games.</p>
+          <ul class="keywords">
             <li>NPC Intelligence</li>
             <li>Procedural Content Generation</li>
             <li>Reinforcement Learning</li>
@@ -84,65 +155,115 @@
 
       <section id="projects" class="section reveal">
         <h3>Projects</h3>
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
+          <button class="filter-btn" data-filter="nlp">NLP</button>
+          <button class="filter-btn" data-filter="rag">RAG/LLMs</button>
+        </div>
         <div class="grid projects">
-          <article class="card project-card">
+          <article class="card glass-card project-card" data-category="computer-vision">
             <h4>Occlusion-Robust Gait Recognition System</h4>
             <p>
               Developed a deep learning-based gait recognition system using CNNs and attention mechanisms for robust
               human identification under occlusion conditions.
             </p>
             <div class="badges"><span>PyTorch</span><span>Computer Vision</span><span>Streamlit</span></div>
-            <div class="actions"><a class="btn" href="https://github.com/rehanfiroz" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://github.com/rehanfiroz?tab=repositories" target="_blank" rel="noopener" aria-label="Gait system demo">Demo</a></div>
+            <div class="actions"><a class="btn" href="https://github.com/Seiichi1" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://github.com/Seiichi1?tab=repositories" target="_blank" rel="noopener" aria-label="Gait system demo">Demo</a></div>
           </article>
-          <article class="card project-card">
+          <article class="card glass-card project-card" data-category="nlp">
             <h4>Fake News Detection using BERT + BiLSTM</h4>
             <p>
               Built a hybrid NLP system using transformers and recurrent networks for real-time fake news
               classification.
             </p>
             <div class="badges"><span>BERT</span><span>BiLSTM</span><span>Transformers</span></div>
-            <div class="actions"><a class="btn" href="https://github.com/rehanfiroz" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://github.com/rehanfiroz?tab=repositories" target="_blank" rel="noopener" aria-label="Fake news demo">Demo</a></div>
+            <div class="actions"><a class="btn" href="https://github.com/Seiichi1" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://github.com/Seiichi1?tab=repositories" target="_blank" rel="noopener" aria-label="Fake news demo">Demo</a></div>
           </article>
-          <article class="card project-card">
+          <article class="card glass-card project-card" data-category="rag">
             <h4>RAG Optimization Research</h4>
             <p>
               Research project focused on reducing hallucinations in Retrieval-Augmented Generation systems using
               improved retrieval and context strategies.
             </p>
             <div class="badges"><span>LLMs</span><span>LangChain</span><span>Vector Databases</span></div>
-            <div class="actions"><a class="btn" href="https://github.com/rehanfiroz" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://github.com/rehanfiroz?tab=repositories" target="_blank" rel="noopener" aria-label="RAG details">Details</a></div>
+            <div class="actions"><a class="btn" href="https://github.com/Seiichi1" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://github.com/Seiichi1?tab=repositories" target="_blank" rel="noopener" aria-label="RAG details">Details</a></div>
           </article>
+        </div>
+      </section>
+
+      <section id="github-contrib" class="section reveal">
+        <h3>GitHub Contributions</h3>
+        <div class="github-contrib-card glass-card">
+          <p>Explore my GitHub contributions and activity:</p>
+          <div id="github-graph" class="github-graph-placeholder">
+            <p>📊 Loading contribution graph...</p>
+          </div>
+          <a href="https://github.com/Seiichi1" target="_blank" rel="noopener" class="btn primary">View GitHub Profile</a>
+        </div>
+      </section>
+
+      <section id="timeline" class="section reveal">
+        <h3>Education & Achievements</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h4>M.Tech in AI & Machine Learning</h4>
+              <p class="timeline-date">2022 - 2024</p>
+              <p>Specialized in Game AI, NPC Intelligence, and Procedural Content Generation</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h4>IEEE Publication</h4>
+              <p class="timeline-date">2024</p>
+              <p>Published comprehensive review on AI-driven NPC Intelligence and PCG in video games</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h4>Research in RAG Systems</h4>
+              <p class="timeline-date">2023 - 2024</p>
+              <p>Focused on optimizing Retrieval-Augmented Generation for reducing hallucinations in LLMs</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h4>Computer Vision Projects</h4>
+              <p class="timeline-date">2022 - 2023</p>
+              <p>Developed gait recognition and other computer vision systems using deep learning</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="skills" class="section reveal">
         <h3>Skills</h3>
         <div class="grid skills-grid">
-          <div class="card"><h4>Programming</h4><div class="badges"><span>Python</span><span>Java</span><span>SQL</span></div></div>
-          <div class="card"><h4>AI/ML</h4><div class="badges"><span>Machine Learning</span><span>Deep Learning</span><span>PyTorch</span><span>TensorFlow</span><span>Scikit-Learn</span></div></div>
-          <div class="card"><h4>Computer Vision</h4><div class="badges"><span>OpenCV</span><span>CNNs</span><span>Image Processing</span></div></div>
-          <div class="card"><h4>NLP</h4><div class="badges"><span>Transformers</span><span>BERT</span><span>RAG</span><span>LangChain</span></div></div>
-          <div class="card"><h4>Tools</h4><div class="badges"><span>Git</span><span>GitHub</span><span>Linux</span><span>FastAPI</span></div></div>
+          <div class="card glass-card"><h4>Programming</h4><div class="badges"><span>Python</span><span>Java</span><span>SQL</span></div></div>
+          <div class="card glass-card"><h4>AI/ML</h4><div class="badges"><span>Machine Learning</span><span>Deep Learning</span><span>PyTorch</span><span>TensorFlow</span><span>Scikit-Learn</span></div></div>
+          <div class="card glass-card"><h4>Computer Vision</h4><div class="badges"><span>OpenCV</span><span>CNNs</span><span>Image Processing</span></div></div>
+          <div class="card glass-card"><h4>NLP</h4><div class="badges"><span>Transformers</span><span>BERT</span><span>RAG</span><span>LangChain</span></div></div>
+          <div class="card glass-card"><h4>Tools</h4><div class="badges"><span>Git</span><span>GitHub</span><span>Linux</span><span>FastAPI</span></div></div>
         </div>
       </section>
 
-      <section id="resume" class="section reveal">
-        <h3>Resume</h3>
-        <a class="btn primary" href="assets/resume.pdf" download>Download Resume</a>
-      </section>
-
       <section id="contact" class="section reveal">
-        <h3>Contact</h3>
+        <h3>Get In Touch</h3>
         <div class="contact-links">
           <a href="mailto:contact@rehanfiroz.dev" aria-label="Email">✉ Email</a>
-          <a href="https://www.linkedin.com/in/rehanfiroz/" target="_blank" rel="noopener" aria-label="LinkedIn">🔗 LinkedIn</a>
-          <a href="https://github.com/rehanfiroz" target="_blank" rel="noopener" aria-label="GitHub">💻 GitHub</a>
+          <a href="https://www.linkedin.com/in/rehan-firoz-123df/" target="_blank" rel="noopener" aria-label="LinkedIn">🔗 LinkedIn</a>
+          <a href="https://github.com/Seiichi1" target="_blank" rel="noopener" aria-label="GitHub">💻 GitHub</a>
         </div>
       </section>
     </main>
 
     <footer class="section footer">
-      <p>© 2026 Rehan Firoz</p>
+      <p>&copy; 2026 Rehan Firoz</p>
       <p>Artificial Intelligence | Machine Learning | Game AI</p>
     </footer>
 
